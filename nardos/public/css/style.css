@@ -348,7 +348,7 @@ ul {
     padding-top: 1rem;
 }
 
-li {
+.row-red li {
     color: white;
     font-size: 1.5em;
     font-weight: 900;
@@ -366,4 +366,22 @@ li.number {
     font: 15px Arial, sans-serif;
     margin-left: 2rem;
     font-weight: 1500;
+}
+
+#container {
+    margin-top: 3rem;
+}
+#time {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size:4em;
+    width:200px;
+    background-color: gray;
+    border-radius: 5%;
+}
+.start {
+    font-size: 1rem;
+    margin-left: 1rem;
 }
