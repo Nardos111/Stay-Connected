@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icebreaker Questions</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="./icebreaker.js"></script>
+    <!-- <script src="https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js"></script> -->
+  <body>
+    <div class="wrapper">
+      <section class="sec-intro">
+        <header role="banner">
+          <input id="nav-check" type="checkbox" />
+          <label class="fa" for="nav-check"></label>
+          <nav role="navigation">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About our website</a></li>
+              <li><a href="#">Mindfulness</a></li>
+              <li><a href="#">Physical Activities</a></li>
+              <li><a href="#">Icebreaker Questions</a></li>
+              <li><a href="#">Icebreaker Activities</a></li>
+            </ul>
+          </nav>
+        </header>
+        <h1>Icebreaker Activities</h1>
+      </section>
+      <section class="sec-about">
+        <div class="row-grey">
+          <div class="row">
+            <article class="col-2">
+              <h1>Welcome!</h1>
+              <p>
+                Playing icebreakers tend to open people up. It gets them interacting and learning. It helps shatter the preconceived notions that most adults have developed over the years. As much as we try not to have prejudices and be open minded, there are still internal filters and preconceived notions that unconsciously occur in your mind. Things you’ve seen, heard, or experienced over the years that formed your ideas and perceptions. Icebreaker games can shatter those and open people up to working together.
+              </p>
+              <p>
+                Be excellent devices to help people feel more comfortable with themselves and with others and feel more “at home” in a group
+
+Break up the ‘cliques,’ invite people to form random groupings, and help individuals meet others in non-threatening and fun ways
+
+Be used to set a tone for the time a group will be together, will encourage people to feel “safe” and hopefully will evoke lots of laughter in releasing tension.
+
+Make way for more meaningful interaction and relationships during the life of the group.
+              </p>
+            </article>
+            <article class="col-2">
+              <h1>What are Benefits of Using Icebreakers?</h1>
+              <p>
+                They can transform a rather average or dull meeting into something rather special.
+                Ice breakers introduce people to one another in a fun and informal way
+                Ice breakers relax people and help them to get to know each other far more quickly
+                Energize and motivate participants
+                People learn better when they are involved physically, mentally and emotionally. Icebreaker activities provide this kind of active, practical learning
+                Games offer an opportunity to share their knowledge and learn from each other
+                People learn differently. Some learn best by hearing, some by seeing, some by reflecting, some by interacting, some by doing, some by talking, some by incorporating music or rhythm, some by solving problems. Games offer an opportunity to help people with diverse learning styles to engage with a topic or issue.
+                Can reduce participants’ sense of anonymity or isolation in any venue. Helps to foster a shared sense of purpose and community in the course
+
+              </p>
+          
+            </article>
+          </div>
+        </div>
+        <div class="row-red">
+          <div class="row">
+            <h4 class="upload">
+              Upload list screenshot
+            </h4>
+            <form onsubmit="submit()">
+              <input
+                type="file"
+                id="myFile"
+                name="filename"
+                multiple="false"
+                accept="image/*"
+              /><br />
+              <input type="submit" class="submit" />
+            </form>
+          </div>
+        </div>
+        
+      </section>
+      <div id="container">
+        <div id="inputArea">
+        </div>
+  
+        <h1 id="time">0:00</h1>
+      </div>
+      <section class="sec-news">
+        <div class="row">
+          <h1>Activity Options</h1>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <article class="post">
+              <span>#<br />1</span>
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="sell it"
+              />
+              <h1>Sell IT</h1>
+              <p></p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="post">
+              <span>#<br />2</span>
+              <img
+                src="./weird.png"
+                alt="Weirdest Thing"
+              />
+              <h1>The Weirdest Thing</h1>
+              <p></p>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <article class="post">
+              <span>#<br />3</span>
+              <img
+                src="./twoone.png"
+                alt="Icebreaker Questions"
+              />
+              <h1>Two Truths and a Lie</h1>
+              <p></p>
+            </article>
+          </div>
+          <div class="col-2">
+            <article class="post">
+              <span># <br />4</span>
+              <img
+                src="https://www.writersunlimited.nl/files/2019/11/20191120160239_1.jpg"
+                alt="Icebreaker Activities"
+              />
+              <h1>The Truman Show</h1>
+              <p></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="row">
+          <ul class="soc-media">
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-pinterest"></a></li>
+            <li><a href="#" class="fa fa-envelope"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+        function submit(){
+        var fileinput = document.getElementById("myFile");
+        Tesseract.recognize("image.png", "eng", {
+        logger: (m) => console.log(m),
+      }).then(({ data: { text } }) => {
+        console.log(text);
+      });
+        }
+    </script>
+  </body>
+</html>
