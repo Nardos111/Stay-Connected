@@ -1,3 +1,6 @@
+window.finalList = [];
+var namesList = [];
+
 function run() {
   fetch("file.txt")
     .then(function (response) {
@@ -6,8 +9,6 @@ function run() {
     .then(function (data) {
       var names = data.split("\n");
       names.pop();
-      var finalList = [];
-      var namesList = [];
       for (var i = 0; i < names.length; i++) {
         namesList.push(names[i].split(" "));
         finalList.push(names[i].split(" "));
@@ -29,9 +30,57 @@ function run() {
       for (var r = 0; r < finalList.length; r++) {
         finalList[r] = finalList[r].join(" ");
       }
-      console.log(finalList);
+      addList(finalList);
     })
     .catch(function (error) {
       console.log(error);
     });
+}
+
+function addList(array) {
+  ul = document.createElement("ul");
+  document.getElementsByClassName("namelist")[0].appendChild(ul);
+  var rowred = document.getElementsByClassName("row-red")[0];
+  var plus = array.length * 4.5;
+  plus = plus + 15;
+  rowred.style.height = `${plus}rem`;
+  var numbers = getSequence(array.length);
+  var shuffled = shuffle(numbers);
+  console.log(shuffled);
+  array.forEach(function (item) {
+    ul = document.createElement("ul");
+    document.getElementsByClassName("namelist")[0].appendChild(ul);
+    let li = document.createElement("li");
+    ul.appendChild(li);
+    li.innerHTML += item;
+    li.style.display = "inline";
+    let lis = document.createElement("li");
+    lis.style.display = "inline";
+    ul.appendChild(lis);
+    lis.innerHTML += shuffled.pop();
+    lis.className += "number";
+  });
+}
+
+function getSequence(max) {
+  var numbers = [];
+  for (var i = 0; i < max; i++) {
+    numbers.push(i + 1);
+  }
+  return numbers;
+}
+
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }

@@ -70,6 +70,7 @@ button {
     color: #fff;
     border: 0;
     outline: 0;
+    margin-left: 2rem;
 }
 button:focus, button:hover {
     background: #1a1a1a;
@@ -289,7 +290,7 @@ footer p {
   height: 10rem;   
 }
 .row-red {
-    height: 30rem;
+    height: 15rem;
 }
 .sec-intro h1 {
     background-color: white;
@@ -310,7 +311,7 @@ footer p {
     margin-bottom: 2rem;
 }
 
-.submit  {
+/* .submit  {
     margin-top: 4em;
     width: 8em;
     line-height: 2em;
@@ -321,7 +322,8 @@ footer p {
     outline: 0;
     transition: all 0.25s;
     font-weight: 800;
-}
+    margin-left: 4rem;
+} */
 .submit:focus, .submit:hover {
     background: gray;
 }
@@ -339,4 +341,29 @@ footer p {
 .nav {
     /* border: 2px solid white; */
     background-color: rgb(85, 82, 82);
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+li {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+li.number {
+    border-radius: 50%;
+    width: 20px;
+    height: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    margin-left: 2rem;
+    font-weight: 1500;
 }
