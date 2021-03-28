@@ -43,7 +43,7 @@
             </p>
           </article>
           <article class="col-2">
-            <h1>What are Ice Breaker Questions?</h1>
+            <h1>What are Icebreaker Questions?</h1>
             <p>
               Ice breakers are simple activities or conversations that help ease any anxieties or awkwardness when a group comes together for a meeting, discussion, casual chat or many other occasions. A virtual ice breaker is perfect for when these meetings happen through video conference or conference call where folks may feel slightly uncomfortable in this type of social setting. 
               Incorporate more laughter and philosophical thought into your virtual classes and meetings to boost productivity, creativity and collaboration. One of the easiest and most effective ways to do this? A few brief ice breakers.  Remote teams could fall into a habit of only focusing on work tasks without allowing the opportunity of forming bonds with one another and efficient work patterns that naturally develop when a level of personal understanding is reached. Virtual team ice breakers can break down communication barriers, encourage creativity and collaboration while also decreasing feelings of isolation. 
@@ -81,60 +81,28 @@
           <h1 id="time">0:00</h1>
         </div>
         <div class="row">
-          <h1>Activity Options</h1>
+          <h1>Questions Options</h1>
         </div>
         <div class="row">
-          <div class="col-2">
-            <article class="post">
-              <span>21 <br />JAN</span>
-              <img
-                src=""
-                alt="Mindfulness"
-              />
-              <h1>Mindfulness</h1>
-              <p></p>
-            </article>
-          </div>
-          <div class="col-2">
-            <article class="post">
-              <span>05 <br />FEB</span>
-              <img
-                src=""
-                alt="Physical Activities"
-              />
-              <h1>Physical activities</h1>
-              <p></p>
-            </article>
-          </div>
+          <select id="idFormat" name="format" onchange="getQuestion()">
+            <option value="no" selected disabled=true>--- Select Question Category ---</option>
+              <option value="virtual">Quarantine Icebreaker Questions</option>
+              <option value="funny">Funnay Icebreaker Questions</option>
+              <option value="great">Great Icebreaker Questions</option>
+              <option value="meetings">Meetings Icebreaker Questions</option>
+              <option value="awkward">Awkward, Weird Icebreaker Questions</option>
+              <option value="could">If you Could Icebreaker Questions</option>
+              <option value="rather">Would You Rather Icebreaker Questions</option>
+              <option value="college">Icebreaker Questions for College Students</option>
+              <option value="highschool">Icebreaker Questions for Highschool Students</option>
+              <option value="kids">Icebreaker Questions for Kids</option>
+          </select>
         </div>
         <div class="row">
-          <div class="col-2">
-            <article class="post">
-              <span>18 <br />FEB</span>
-              <img
-                src=""
-                alt="Icebreaker Questions"
-              />
-              <h1>Icebreaker Questions</h1>
-              <p></p>
-            </article>
-          </div>
-          <div class="col-2">
-            <article class="post">
-              <span>11 <br />MAR</span>
-              <img
-                src=""
-                alt="Icebreaker Activities"
-              />
-              <h1>Icebreaker Activities</h1>
-              <p></p>
-            </article>
-          </div>
+          <textarea id="question"></textarea>
         </div>
-        <div class="row">
-          <button type="button" value="View All News" role="button">
-            Go to top
-          </button>
+        <div class="next">
+          <Button class="nextQuestion">Next Question</Button>
         </div>
       </section>
       <footer>

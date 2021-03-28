@@ -390,3 +390,27 @@ li.number {
     font-size: 1rem;
     margin-left: 1rem;
 }
+#question {
+    margin-top: 3rem;
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+    border: 2.5px solid black;
+    resize: none;
+    overflow: auto;
+    border-radius: 1rem 1rem;
+    font-size: 1rem;
+}
+p {
+    line-height: 20pt;
+}
+.nextQuestion {
+    margin-bottom: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 1rem 1rem;
+    background-color: #900;
+    border: 2.5px solid black
+}

@@ -158,7 +158,7 @@ function start() {
   var startButton = document.createElement("input");
   startButton.setAttribute("type", "button");
   startButton.setAttribute("value", "Start Countdown");
-  startButton.setAttribute("class", "start");
+  startButton.setAttribute("class", "start`");
   startButton.onclick = function () {
     startCountdown();
   };
@@ -166,4 +166,23 @@ function start() {
   //add to the DOM, to the div called "inputArea"
   document.getElementById("inputArea").appendChild(inputMinutes);
   document.getElementById("inputArea").appendChild(startButton);
+}
+
+function getQuestion() {
+  var request = new XMLHttpRequest();
+  request.open("GET", "data.json", true);
+  request.onload = function () {
+    if (request.status >= 200 && request.status < 400) {
+      var data = JSON.parse(request.responseText);
+      console.log(data[0]);
+    } else {
+      console.log("error");
+    }
+  };
+
+  request.onerror = function () {
+    console.log("There was an error");
+  };
+
+  request.send();
 }

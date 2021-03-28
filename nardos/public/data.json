@@ -1,4 +1,4 @@
-{"visual": ["Do you love working from home or would you rather be in the office? Is there a balance of both that you like best",
+[{"virtual": ["Do you love working from home or would you rather be in the office? Is there a balance of both that you like best",
 "What’s the hardest part about working virtually for you? The easiest?",
 "Do you have a dedicated office space at home?",
 "Show us your office space!",
@@ -48,7 +48,7 @@
 "60s, 70s, 80s, 90s: Which decade do you love the most and why?",
 "What’s your favorite sandwich and why?"
 ], 
-"Great": [
+"great": [
 "What’s the best piece of advice you’ve ever been given?",
 "When you die, what do you want to be remembered for?",
 "What is your favorite item you’ve bought this year?",
@@ -67,7 +67,7 @@
 "What fictional family would you be a member of?",
 "What is your favorite television network?"
 ], 
-"Meetings":[ 
+"meetings":[ 
 "What sport would you compete in if you were in the Olympics?",
 "Who is the better businessman or business woman and why? (Example: Justin Timberlake or Justin Bieber?)",
 "What was the worst job you ever had?",
@@ -116,7 +116,7 @@
 "Are you a good dancer?",
 "What fruit or vegetable would you most want to be?"
 ], 
-"If you could": [
+"could": [
 "If you could hang out with any cartoon character, who would you choose and why?",
 "If you could live anywhere in the world for a year, where would it be?",
 "If you could commit any crime and get away with it what would you choose and why?",
@@ -143,7 +143,7 @@
 "If you could have the power of teleportation right now, where would you go and why?",
 "If you could write a book that was guaranteed to be a best seller, what would you write?"
 ], 
-"would you rather": [
+"rather": [
 "Would you rather live in the ocean or on the moon?",
 "Would you rather meet your travel back in time to meet your ancestors or to the future to meet your descendants?",
 "Would you rather lose all of your money or all of your pictures?",
@@ -156,7 +156,7 @@
 "Would you rather be able to run at 100 miles per hour or fly at 10 miles per hour?",
 "Would you rather be a superhero or the world’s best chef?",
 "Would you rather be an Olympic gold medallist or an astronaut?"],
-"college students": [
+"college": [
 "What is your major?",
 "If that wasn’t your major, what would your major be?",
 "What most surprised you when you first arrived on campus or first started classes at this school?",
@@ -173,7 +173,7 @@
 "Besides graduating, what is your number one goal for your remaining time at college?",
 "Describe the best teacher you have had so far."
 ], 
-"high school Students": [
+"highschool": [
 "What is your major?",
 "If that wasn’t your major, what would your major be?",
 "What most surprised you when you first arrived on campus or first started classes at this school?",
@@ -190,7 +190,7 @@
 "Besides graduating, what is your number one goal for your remaining time at college?",
 "Describe the best teacher you have had so far."
 ], 
-"for kids": [
+"kids": [
 "If you could have any animal for a pet, what would it be?",
 "If your pet could talk, what do you think it would say?",
 "Would you rather explore outer space or the bottom of the ocean?",
@@ -206,4 +206,4 @@
 "What is your best idea for a new invention?",
 "If you were invisible for a day, what would you do?",
 "What is your favorite ice cream flavor and ice cream topping?"
-]}
+]}]
