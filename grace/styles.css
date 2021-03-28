@@ -1,3 +1,10 @@
+.video-div {
+    max-width: 840px; 
+    max-height: 630px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 button, .nav, .nav a, header label, .post, .col-3 img, .soc-media a {
     transition: all 0.25s;
 }
@@ -285,3 +292,5 @@ footer p {
     text-align: center;
     color: #aaa;
 }
+
+
