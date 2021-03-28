@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Exercises</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script type="text/javascript" src="exercises.js"></script>
-	</head>
+<head>
+	<title>Exercises</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="exercises.js"></script>
+</head>
 
-	<body>
-		<h1>Physical Exercises</h1>
+<body>
+	<header role="banner">
+		<input id="nav-check" type="checkbox" />
+		<label class="fa" for="nav-check"></label>
+		<nav role="navigation">
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About our website</a></li>
+				<li><a href="mindfulness.html">Mindfulness</a></li>
+				<li><a href="exercises.html">Physical Activities</a></li>
+				<li>
+					<a href="./Icebreaker Questions.html">Icebreaker Questions</a>
+				</li>
+				<li><a href="#">Icebreaker Activities</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1>Physical Exercises</h1>
 	
-		<label id="question">How much time do you have?</label>
+	<label id="question">How much time do you have?</label>
 
-		<div class="options">
-			<select id="dropdown">
-				<option value="5 minutes">5 minutes</option>
-				<option value="10 minutes">10 minutes</option>
-			</select>
-		</div>
-		
-			<br>
+	<div class="options">
+		<select id="dropdown">
+			<option value="5 minutes">5 minutes</option>
+			<option value="10 minutes">10 minutes</option>
+		</select>
+	</div>
 
-			<form>
-				<input type="radio" id="cardio" value="cardio" name="type" checked="checked">
-				<label for="cardio">Cardio</label>
-				<input type="radio" id="stretching" value="stretching" name="type">
-				<label for="stretching">Stretching</label>
-			</form>
+	<br>
 
-			<button class="submit" onclick="ChangeLink()">Submit</button>
+	<form>
+		<input type="radio" id="cardio" value="cardio" name="type" checked="checked">
+		<label for="cardio">Cardio</label>
+		<input type="radio" id="stretching" value="stretching" name="type">
+		<label for="stretching">Stretching</label>
+	</form>
 
-		<div class="video-div">
-			<iframe id="video" width="840" height="630" src="https://www.youtube.com/embed/UAA3E5MLqrM"></iframe>
-		</div>
-	</body>
+	<button class="submit" onclick="ChangeLink()">Submit</button>
+
+	<div class="video-div">
+		<iframe id="video" width="840" height="630" src="https://www.youtube.com/embed/UAA3E5MLqrM"></iframe>
+	</div>
+</body>
 </html>
