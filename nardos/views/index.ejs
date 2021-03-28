@@ -84,10 +84,10 @@
           <h1>Questions Options</h1>
         </div>
         <div class="row">
-          <select id="idFormat" name="format" onchange="getQuestion()">
+          <select id="idFormat" name="format" onchange="getSelectValue()">
             <option value="no" selected disabled=true>--- Select Question Category ---</option>
               <option value="virtual">Quarantine Icebreaker Questions</option>
-              <option value="funny">Funnay Icebreaker Questions</option>
+              <option value="funny">Funny Icebreaker Questions</option>
               <option value="great">Great Icebreaker Questions</option>
               <option value="meetings">Meetings Icebreaker Questions</option>
               <option value="awkward">Awkward, Weird Icebreaker Questions</option>
@@ -102,7 +102,7 @@
           <textarea id="question"></textarea>
         </div>
         <div class="next">
-          <Button class="nextQuestion">Next Question</Button>
+          <Button onclick="nextQuestion()" class="nextQuestion">Next Question</Button>
         </div>
       </section>
       <footer>

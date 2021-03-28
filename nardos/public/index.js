@@ -168,21 +168,63 @@ function start() {
   document.getElementById("inputArea").appendChild(startButton);
 }
 
-function getQuestion() {
+function getQuestion(choice) {
+  var questions = [];
   var request = new XMLHttpRequest();
   request.open("GET", "data.json", true);
   request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
       var data = JSON.parse(request.responseText);
-      console.log(data[0]);
+      for (var i = 0; i < data[0][choice].length; i++) {
+        questions.push(data[0][choice][i]);
+      }
+      displayQuestion(questions);
     } else {
       console.log("error");
     }
   };
-
   request.onerror = function () {
     console.log("There was an error");
   };
+  request.send();
+}
 
+function getSelectValue() {
+  var selectedValue = document.getElementById("idFormat").value;
+  var questions = getQuestion(selectedValue);
+}
+
+function displayQuestion(questions) {
+  var area = document.getElementById("question");
+  area.innerHTML = questions[0];
+}
+
+function nextQuestion() {
+  var area = document.getElementById("question");
+  var category = document.getElementById("idFormat").value;
+  var pickedQuestions = [];
+  var request = new XMLHttpRequest();
+  var nextItem = 0;
+  request.open("GET", "data.json", true);
+  request.onload = function () {
+    if (request.status >= 200 && request.status < 400) {
+      var file = JSON.parse(request.responseText);
+      index = file[0][category].indexOf(area.innerHTML);
+      console.log(file[0][category].length);
+      console.log(index);
+      if (index >= 0 && index < file[0][category].length - 1) {
+        nextItem = file[0][category][index + 1];
+      }
+      if (nextItem == 0) {
+        nextItem = file[0][category][0];
+      }
+      area.innerHTML = nextItem;
+    } else {
+      console.log("error");
+    }
+  };
+  request.onerror = function () {
+    console.log("There was an error");
+  };
   request.send();
 }
