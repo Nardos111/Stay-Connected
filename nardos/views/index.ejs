@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Icebreaker Questions</title>
     <link rel="stylesheet" href="/css/style.css" type="text/css"/>
-    <script src="./icebreaker.js"></script>
+    <script src="/index.js"></script>
     <!-- <script src="https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js"></script> -->
-  <body>
+  <body onload="run()">
     <div class="wrapper">
       <section class="sec-intro">
         <header role="banner">
@@ -33,7 +33,7 @@
             <h4 class="upload">
               Upload list screenshot
             </h4>
-            <form action="/uploads" method="POST" enctype="multipart/form-data">
+            <form id="imageform" class="false" action="/uploads" onsubmit="change(this)" method="POST" enctype="multipart/form-data">
               <input
                 type="file"
                 id="myFile"
@@ -41,7 +41,7 @@
                 multiple="false"
                 accept="image/*"
               /><br />
-              <Button type="submit" class="submit">SUBMIT</Button>
+              <Button type="submit" >SUBMIT</Button>
             </form>
           </div>
         </div>
@@ -225,15 +225,5 @@
         </div>
       </footer>
     </div>
-    <script>
-        function submit(){
-        var fileinput = document.getElementById("myFile");
-        Tesseract.recognize("image.png", "eng", {
-        logger: (m) => console.log(m),
-      }).then(({ data: { text } }) => {
-        console.log(text);
-      });
-        }
-    </script>
   </body>
 </html>

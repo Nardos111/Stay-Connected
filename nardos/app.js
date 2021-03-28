@@ -28,7 +28,7 @@ app.post("/uploads", (req, res) => {
       Tesseract.recognize(data, "eng")
         .then(({ data: { text } }) => {
           const item = text;
-          fs.writeFileSync("file.txt", item);
+          fs.writeFileSync("./public/file.txt", item);
           console.log(item);
         })
         .then((result) => {
